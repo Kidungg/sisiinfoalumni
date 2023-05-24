@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+section .lightbox{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.6);
+    z-index: 100px;
+
+
+}
+.lightbox .lightbox_content{
+    position: fixed;
+    right: 100px;
+    top: 150px;
+    transform: translate(-50%,-0%);
+    max-width: 950px;
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.lightbox_content .close{
+    position: absolute;
+    top: 0;
+    left: -40px;
+    font-size: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+}
